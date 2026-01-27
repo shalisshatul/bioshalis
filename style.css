@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fce7f3;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box {
+    background: white;
+    width: 85%;
+    max-width: 1100px;
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* FOTO HERO */
+.hero-image img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid #fbcfe8;
+    box-shadow: 0 15px 30px rgba(236,72,153,0.4);
+    transition: 0.3s;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* TEKS HERO */
+.hero-text h1 {
+    font-size: 42px;
+}
+
+.hero-text span {
+    color: #ec4899;
+}
+
+.subtitle {
+    margin: 15px 0 25px;
+    color: #555;
+    font-size: 18px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #ec4899;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.gray {
+    background: #fdf2f8;
+}
+
+/* FOTO ABOUT */
+.about-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 6px solid #f9a8d4;
+}
+.skill-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #9d174d;
+    position: relative;
+}
+
+/* garis hias di bawah judul */
+.skill-title::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: #ec4899;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+.skills-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 45px rgba(236,72,153,0.25);
+}
+
+.skill-card h3 {
+    color: #ec4899;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.skill-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
